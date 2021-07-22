@@ -7,6 +7,12 @@ class HeaderComponent extends Component {
         this.state = {
                  
         }
+
+        this.returnMain = this.returnMain.bind(this);
+    }
+
+    returnMain() {
+        this.props.history.push("/");
     }
 
     render() {
@@ -14,7 +20,7 @@ class HeaderComponent extends Component {
             <div>
                 <header>
                     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                    <div><a href="https://javaguides.net" className="navbar-brand">Employee Management App</a></div>
+                    <div><button className="btn navbar-brand" >Employee Management App</button></div>
                     </nav>
                 </header>
             </div>
